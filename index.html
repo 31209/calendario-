@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario de Tareas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Calendario de Tareas</h1>
+  <div class="input-container">
+    <input type="text" id="titulo" placeholder="Título de la tarea">
+    <input type="date" id="fecha" >
+    <button id="agregar">Agregar Tarea</button>
+  </div>
+  <div id="calendar"></div>
+  <div id="lista-tareas"></div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
